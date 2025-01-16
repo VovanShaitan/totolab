@@ -1,20 +1,33 @@
 package structures
 
-import "time"
-
 type ContentData struct {
 	Data string
 }
 
-type RUR struct {
-	Amount float32
-}
+type CurrencyRUR float32
+
+type CurrencyEUR float32
 
 type DrawInfo struct {
 	DrawNumber int
 	Status     string
-	Date       time.Time
-	Time       time.Time
-	Jackpot    RUR
-	Pool       RUR
+	Date       string
+	Time       string
+	Jackpot    CurrencyRUR
+	Pool       CurrencyRUR
+}
+
+type MatchInfo struct {
+	MatchNumber int
+	HomeTeam    string
+	AwayTeam    string
+	Event       string
+	Way1Book    float32
+	WayXBook    float32
+	Way2Book    float32
+	Way1Pool    float32
+	WayXPool    float32
+	Way2Pool    float32
+	Score       string
+	Way         string
 }
