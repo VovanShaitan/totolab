@@ -31,3 +31,9 @@ type MatchInfo struct {
 	Score       string
 	Way         string
 }
+
+type Variant struct {
+	Body  string
+	GMean float32
+	Bad   int
+}
