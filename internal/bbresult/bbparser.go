@@ -1,4 +1,4 @@
-// package bbparser
+// package bbresult
 package main
 
 import (
